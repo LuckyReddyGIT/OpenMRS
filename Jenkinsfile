@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone repo and clean it') {
             steps {
-                sh "git clone https://github.com/LuckyReddyGIT/OpenMRS.git"
+                sh "git clone https://github.com/openmrs/openmrs-contrib-android-client.git"
                 sh "mvn clean -f openmrs-contrib-android-client"
             }
         }
